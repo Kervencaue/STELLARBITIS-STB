@@ -1,0 +1,22 @@
+{
+  "name": "iucncoin",
+  "version": "1.0.0",
+  "description": "IUCNCoin Smart Contract Project",
+  "main": "truffle.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IUCNCoin/IUCNCoin-Contract.git"
+  },
+  "keywords": [
+    "IUCNCoin"
+  ],
+  "author": "@Cooller458",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IUCNCoin/IUCNCoin-Contract/issues"
+  },
+  "homepage": "https://github.com/IUCNCoin/IUCNCoin-Contract#readme"
+}
