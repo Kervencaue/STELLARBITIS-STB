@@ -155,8 +155,8 @@ contract StellarBits is Context, IBEP20, Ownable {
     uint256 private deadline = 3;
 
     address public deadWallet = 0x000000000000000000000000000000000000dEaD;
-    address public marketingWallet = 0xf4c6ff062349096ecd4e66777bcf9a42c4745e47;
-    address public DevelopmentWallet = 0xf4c6ff062349096ecd4e66777bcf9a42c4745e47;
+    address public marketingWallet = 0xF4C6FF062349096eCD4E66777BcF9A42C4745e47;
+    address public DevelopmentWallet = 0xF4C6FF062349096eCD4E66777BcF9A42C4745e47;
     uint256 public constant MAX_SUPPLY = 1e11 * 10**18;
     
     // State variables
