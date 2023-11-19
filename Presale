@@ -237,10 +237,10 @@ abstract contract ReentrancyGuard {
     }
 }
 
-contract IUCNcoinPresale is Ownable , ReentrancyGuard {
+contract STELLARBITIS Presale is Ownable , ReentrancyGuard {
 
     using SafeMath for uint256;
-    IERC20 public IUCNcoin;
+    IERC20 public STELLARBITIS ;
     uint256 tokenPrice; // doller price with 8 Decimals
 
     bool public paused;
@@ -272,7 +272,7 @@ contract IUCNcoinPresale is Ownable , ReentrancyGuard {
     
     constructor() {
 
-        IUCNcoin = IERC20(0x0B4663216B812e4a2f0Fc2029ff1232958f4bf8c);
+        STELLARBITIS  = IERC20(0x0B4663216B812e4a2f0Fc2029ff1232958f4bf8c);
         paused = false;
         tokenPrice = 300000000000000; //rate = $0,0003
 
@@ -320,7 +320,7 @@ contract IUCNcoinPresale is Ownable , ReentrancyGuard {
         );
 
         orderIds[msg.sender].push(latestOrderId);
-        IUCNcoin.transferFrom(treasury, msg.sender, tokenAmount);
+        STELLARBITIS .transferFrom(treasury, msg.sender, tokenAmount);
     }
 
     //2. Btc, 3. ETH, 4. Usdt, 5.Usdc
@@ -364,7 +364,7 @@ contract IUCNcoinPresale is Ownable , ReentrancyGuard {
 
         orderIds[msg.sender].push(latestOrderId);
            
-        IUCNcoin.transferFrom(treasury, msg.sender, tokenAmount);
+        STELLARBITIS .transferFrom(treasury, msg.sender, tokenAmount);
        
     }
 
@@ -404,7 +404,7 @@ contract IUCNcoinPresale is Ownable , ReentrancyGuard {
     }
 
     function getAvailableBalance() public view returns (uint) {
-        return IUCNcoin.balanceOf(address(this));
+        return STELLARBITIS .balanceOf(address(this));
     }
 
     function rescueFunds() public onlyOwner {
@@ -440,7 +440,7 @@ contract IUCNcoinPresale is Ownable , ReentrancyGuard {
     }
 
     function setToken(address _token) public onlyOwner{
-        IUCNcoin = IERC20(_token);
+        STELLARBITIS  = IERC20(_token);
     }
 
     
