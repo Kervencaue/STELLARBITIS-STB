@@ -1,7 +1,7 @@
 {
-  "name": "iucncoin",
+  "name": "STELLARBITIS",
   "version": "1.0.0",
-  "description": "IUCNCoin Smart Contract Project",
+  "description": "Stellarbitis Smart Contract Project",
   "main": "truffle.js",
   "scripts": {
     "test": "npm start"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/IUCNCoin/IUCNCoin-Contract.git"
   },
   "keywords": [
-    "IUCNCoin"
+    "Stellarbitis"
   ],
   "author": "@Cooller458",
   "license": "MIT",
