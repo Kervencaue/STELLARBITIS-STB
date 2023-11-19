@@ -116,7 +116,7 @@ library Address {
     }
 }
 
-contract IUCN is Context, IBEP20, Ownable {
+contract StellarBits is Context, IBEP20, Ownable {
     using Address for address payable;
 
     mapping(address => uint256) private _rOwned;
@@ -155,16 +155,16 @@ contract IUCN is Context, IBEP20, Ownable {
     uint256 private deadline = 3;
 
     address public deadWallet = 0x000000000000000000000000000000000000dEaD;
-    address public marketingWallet = 0x57cB8175C220cE06841e790D2e5B64ce79c1D2d0;
-    address public DevelopmentWallet = 0x1374905D58e51db15Db132CA0A61590D342764d7;
-    uint256 public constant MAX_SUPPLY = 1e10 * 10**_decimals;
+    address public marketingWallet = 0xf4c6ff062349096ecd4e66777bcf9a42c4745e47;
+    address public DevelopmentWallet = 0xf4c6ff062349096ecd4e66777bcf9a42c4745e47;
+    uint256 public constant MAX_SUPPLY = 1e11 * 10**18;
     
     // State variables
     bool public mintingStarted;
     uint256 public lastMintedBlock;
 
-    string private constant _name = "IUCN Coin";
-    string private constant _symbol = "IUCN";
+    string private constant _name = "Stellarbitis";
+    string private constant _symbol = "STB";
 
     struct Taxes {
         uint256 rfi;
